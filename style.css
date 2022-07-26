@@ -1,0 +1,17 @@
+/*
+Theme name: Zomi Youth Development
+Text Domain: Zomi YD Theme
+Author: Zomi Youth Development
+Author URI: https://zomiyouthdevelopment.org
+Description: Custom WordPress theme for Zomi Youth Development site. Special thanks to Khawm Mung for the original setup and development of this theme.
+Version: 1.0
+Tags: custom-theme
+
+Zomi YD WordPress Theme, (C) 2022 Zomi Youth Development. All Rights Reserved.
+*/
+
+.header {
+    background-color: blanchedalmond;
+    width: 100%;
+    height: 100%;
+}
