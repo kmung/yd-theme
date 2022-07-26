@@ -10,7 +10,7 @@
     <header class="header">
         <nav class="navbar navbar-extend-lg">
             <div class="container-fluid">
-                <?php wp_nav_menu(
+            <?php wp_nav_menu(
                     array(
                         'menu' => 'primary',
                         'container' => '',
@@ -22,6 +22,5 @@
         </nav> 
     </header>
     <div class="main-wrapper">
-        <!--Page Title-->   
-            <h1><?php the_title();?></h1>
+        
     </div>
