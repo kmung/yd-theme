@@ -1,7 +1,7 @@
 <?php
 
+    // dynamically add page title
     function yd_title() {
-        // dynamically add page title
         add_theme_support('title-tag');
     }
     add_action('after_setup_theme', 'yd_title');
