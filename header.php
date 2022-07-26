@@ -13,9 +13,11 @@
         )
         );
     ?>
-
 </head>
 <body>
-    <header>
-        <div class="header"></div>
+    <div class="main-wrapper">
+    <header class="header text-center">
+        <!--Page Title-->
+        <h1><?php the_title();?></h1>
     </header>
+    </div>

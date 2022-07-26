@@ -1,11 +1,8 @@
 <?php get_header();?>
 
-<div class="container">
-    <!--Page Title-->
-    <h1><?php the_title();?></h1>
+<article class="content">
     <!--Content Section-->
     <?php get_template_part('inc/section','content');?>
-
-</div>
+</article>
 
 <?php get_footer();?>
