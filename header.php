@@ -22,9 +22,6 @@
         </nav> 
     </header>
     <div class="main-wrapper">
-        <!--Page Title-->
-                
-                <h1><?php the_title();?></h1>
-                
-    
+        <!--Page Title-->   
+            <h1><?php the_title();?></h1>
     </div>
