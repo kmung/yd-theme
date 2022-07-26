@@ -10,7 +10,12 @@ Tags: custom-theme
 Zomi YD WordPress Theme, (C) 2022 Zomi Youth Development. All Rights Reserved.
 */
 
-.header {
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header {
     background-color: blanchedalmond;
     width: 100%;
     height: 100%;

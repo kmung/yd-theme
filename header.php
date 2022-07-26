@@ -7,17 +7,24 @@
     <?php wp_head();?>
 </head>
 <body>
-    <div class="main-wrapper">
-    <header class="header text-center">
-    <?php wp_nav_menu(
-        array(
-            'menu' => 'primary',
-            'container' => '',
-            'theme_location' => 'primary'
-        )
-        );
-    ?>
-        <!--Page Title-->
-        <h1><?php the_title();?></h1>
+    <header class="header">
+        <nav class="navbar navbar-extend-lg">
+            <div class="container-fluid">
+                <?php wp_nav_menu(
+                    array(
+                        'menu' => 'primary',
+                        'container' => '',
+                        'theme_location' => 'primary'
+                    )
+                    );
+                ?>
+            </div> 
+        </nav> 
     </header>
+    <div class="main-wrapper">
+        <!--Page Title-->
+                
+                <h1><?php the_title();?></h1>
+                
+    
     </div>
