@@ -15,7 +15,7 @@
                         'menu' => 'primary',
                         'container' => '',
                         'theme_location' => 'primary'
-                    )
+                        )
                     );
                 ?>
             </div> 
