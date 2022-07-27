@@ -32,7 +32,7 @@
         wp_enqueue_script('jquery');
 
         // bootstrap js with poppers included
-        wp_enqueue_script('bootstrapjs', ' 	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js', array(), '5.2', true);
+        wp_enqueue_script('bootstrapjs', 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js', array(), '5.2', true);
 
         // custom js
         wp_enqueue_script('customjs', get_template_directory_uri() . '/assets/js/main/js', array(), '1.0', true);
