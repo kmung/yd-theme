@@ -17,7 +17,7 @@
                     $logo = wp_get_attachment_imgage_src($custom_logo_id);
                 }
                 ?>
-                <img class="" src="<?php echo $logo[0] ?>"
+                <img class="" src="<?php echo $logo[0] ?>" alt="yd logo">
 
                 <!--outputting nav menu-->    
                 <?php wp_nav_menu(
