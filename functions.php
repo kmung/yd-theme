@@ -1,9 +1,14 @@
 <?php
-    // dynamically add page title
-    function yd_title() {
+    
+    function yd_theme_support() {
+        // dynamically add page title
         add_theme_support('title-tag');
+        
+        // dynamically add logo
+        // outputting is done in header.php
+        add_theme_support('custom-logo');
     }
-    add_action('after_setup_theme', 'yd_title');
+    add_action('after_setup_theme', 'yd_theme_support');
     
 
     // enqueueing stylesheets
@@ -42,3 +47,4 @@
     }
     // wp hook to add the menu to wordpress
     add_action('init', 'yd_menu');
+
