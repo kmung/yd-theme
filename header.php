@@ -14,7 +14,9 @@
                     array(
                         'menu' => 'primary',
                         'container' => '',
-                        'theme_location' => 'primary'
+                        'theme_location' => 'primary',
+                        //items_wrap to add Bootstrap classes, overriding default wp classes
+                        'items_wrap' => '<ul id="" class="">%3$s</ul>'
                         )
                     );
                 ?>
