@@ -9,6 +9,7 @@
     // enqueueing stylesheets
     function load_stylesheets() {
         //custom css
+        // version is a variable that holds the version of the stylesheet, updated in style.css
         $version = wp_get_theme()->get('Version');
         wp_enqueue_style('custom-style', get_template_directory_uri() . '/style.css', array('zyd-bootstrap'), $version, 'all');
 
@@ -39,5 +40,4 @@
         );
         register_nav_menus($locations);
     }
-
     add_action('init', 'yd_menu');
