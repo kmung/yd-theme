@@ -26,7 +26,7 @@
     }
     add_action('wp_enqueue_scripts', 'load_stylesheets');
 
-    // enqueueing stylesheets
+    // enqueueing JavaScripts
     function load_js() {
         // default jquery included by wp
         wp_enqueue_script('jquery');
