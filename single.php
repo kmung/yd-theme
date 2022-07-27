@@ -6,7 +6,7 @@
 <article class="content">
     <!--Content Section-->
     <?php 
-    // dynamically add the contents of pages
+    // dynamically add the contents of posts
     if ( have_posts() ) {
         while( have_posts() ){
             the_post();
