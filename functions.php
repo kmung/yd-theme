@@ -3,10 +3,13 @@
     function yd_theme_support() {
         // dynamically add page title
         add_theme_support('title-tag');
-        
+
         // dynamically add logo
         // outputting is done in header.php
         add_theme_support('custom-logo');
+
+        // add thumbnail/featured image capability
+        add_theme_support('post-thumbnails');
     }
     add_action('after_setup_theme', 'yd_theme_support');
     
