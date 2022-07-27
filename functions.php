@@ -40,4 +40,5 @@
         );
         register_nav_menus($locations);
     }
+    // wp hook to add the menu to wordpress
     add_action('init', 'yd_menu');
