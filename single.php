@@ -5,7 +5,15 @@
 
 <article class="content">
     <!--Content Section-->
-    <?php get_template_part('inc/section','content');?>
+    <?php 
+    // dynamically add the contents of pages
+    if ( have_posts() ) {
+        while( have_posts() ){
+            the_post();
+            get_template_part('template-parts/content','article');
+        }
+    }  
+?>
 </article>
 
 <?php get_footer();?>
