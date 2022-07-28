@@ -1,7 +1,7 @@
 <?php
     
     function yd_theme_support() {
-        // dynamically add page title
+        // dynamically add site title
         add_theme_support('title-tag');
 
         // dynamically add logo
