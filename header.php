@@ -14,7 +14,7 @@
                 <!--Outputting logo-->
                 <?php if(function_exists('the-custom-logo')) {
                     $custom_logo_id = get_theme_mod('custom-logo');
-                    $logo = wp_get_attachment_imgage_src($custom_logo_id);
+                    $logo = wp_get_attachment_image_src($custom_logo_id);
                 }
                 ?>
                 <img class="" src="<?php echo $logo[0] ?>" alt="yd logo">
