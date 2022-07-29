@@ -22,6 +22,3 @@
     <?php the_content(); ?>
     <br>
 </div>
-<div class="comment">
-    <?php comments_template(); ?>
-</div>
