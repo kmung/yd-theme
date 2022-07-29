@@ -8,18 +8,22 @@
     <?php wp_head();?>
 </head>
 <body>
+    <!--Navigation bar-->
     <header class="header">
-        <nav class="navbar navbar-extend-lg">
-            <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg bg-primary">
+            <div class="container">
                 <!--Outputting logo-->
                 <?php if(function_exists('the-custom-logo')) {
                     $custom_logo_id = get_theme_mod('custom-logo');
                     $logo = wp_get_attachment_image_src($custom_logo_id);
                 }
                 ?>
-                <img class="" src="<?php echo $logo[0] ?>" alt="yd logo">
+                <a class="navbar-brand" href="#">
+                <img src="<?php echo $logo[0] ?>" alt="yd logo" width="30" height="25">
+                </a>
 
-                <!--outputting nav menu-->    
+                <div class="d-flex justify-content-center">
+                    <!--outputting nav menu-->    
                 <?php wp_nav_menu(
                         array(
                             'menu' => 'primary',
@@ -30,6 +34,7 @@
                             )
                         );
                     ?>
+                </div>  
             </div> 
         </nav> 
     </header>
