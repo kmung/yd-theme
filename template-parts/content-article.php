@@ -11,14 +11,6 @@
         ?>
         </span>
         <br>
-        <!--Tags Area-->
-        <?php 
-        $tags = get_the_tags();
-        foreach($tags as $tags): ?>
-            <a class="badge bg-success" href="#"> <?php echo $tag->name;?>
-            </a>
-        <?php endforeach;?>
-        
         <!--Category Area-->
         <?php
         $categories = get_the_category();
@@ -29,4 +21,7 @@
     <!--Post Content-->
     <?php the_content(); ?>
     <br>
+</div>
+<div class="comment">
+    <?php comments_template(); ?>
 </div>
