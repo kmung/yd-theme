@@ -21,4 +21,9 @@
     <!--Post Content-->
     <?php the_content(); ?>
     <br>
+
+    <!--Comment section-->
+    <?php
+        comments_template();
+    ?>
 </div>
