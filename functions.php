@@ -44,6 +44,7 @@
         $locations = array(
             // naming menu locations
             'primary' => "Primary Navigation",
+            'mobile' => 'Mobile Navigation',
             'footer' => 'Footer Navigation'
         );
         register_nav_menus($locations);
