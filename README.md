@@ -5,5 +5,6 @@ I created a repository prior to this to begin coding the site from complete scra
 
 ## Progress Update
 It has been about a week since I started this project (I pushed my repo to GitHub much later). Here are two things on my mind so far:
+
     * Learning PHP is fun and being able to apply it to this project has made me very happy!
     * Bugs. There were lots of them. Some minor syntax error (like the infamous forgetting to type semicolon), while others are logical error (or logical roadblock) and are quite tough to solve.
