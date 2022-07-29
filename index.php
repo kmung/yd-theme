@@ -13,7 +13,8 @@
             get_template_part('template-parts/content','archive');
         }
     }  
-?>
+    ?>
+
 </article>
 
 <?php get_footer();?>
