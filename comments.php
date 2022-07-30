@@ -1,3 +1,13 @@
+<?php
+/*
+ * if post is protected by a password and visitor has not entered password
+ * return early without loading comments
+ */
+if ( post_password_required()) {
+    return;
+}
+?>
+
 <div class="comments-wrapper">
     <div class="comments" id="comments">
         <!--Comments header-->
@@ -17,8 +27,9 @@
             <?php
                 wp_lists_comments(
                     array(
-                    'avatar_size' => 120,
+                    'avatar_size' => 80,
                     'style' => 'div',
+                    'short_ping' => true
                     )    
                 );
             ?>
