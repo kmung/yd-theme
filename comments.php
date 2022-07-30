@@ -25,7 +25,7 @@ if ( post_password_required()) {
         </div>
         <div class="comments-inner">
             <?php
-                wp_lists_comments(
+                wp_list_comments(
                     array(
                     'avatar_size' => 80,
                     'style' => 'div',
