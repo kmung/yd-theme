@@ -16,7 +16,7 @@
                 <!--Outputting logo-->
                 <?php if(function_exists('the-custom-logo')) {
                     $custom_logo_id = get_theme_mod('custom-logo');
-                    $logo = wp_get_attachment_image_src($custom_logo_id);
+                    $logo = wp_get_attachment_image_src($custom_logo_id, full);
                 }
                 ?>
                 <a class="navbar-brand" href="#">
