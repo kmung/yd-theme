@@ -1,9 +1,6 @@
 <?php get_header();?>
 
-<!--Page Title-->   
-<h1><?php the_title();?></h1>
-
-<article class="content">
+<section class="content px-3 py-5 p-md-5">
     <!--Content Section-->
     <?php 
     // dynamically add the contents of posts
@@ -27,6 +24,6 @@
         'total' => $wp_query->max_num_pages
         ) );
     ?>
-</article>
+</section>
 
 <?php get_footer();?>
