@@ -13,31 +13,37 @@
     <!--Left-side Navigation bar-->
     <header class="header text-center">
         <nav class="navbar navbar-expand-lg bg-primary">
-            <div class="container">
-                <!--Outputting logo-->
-                <?php if(function_exists('the-custom-logo')) {
-                    $custom_logo_id = get_theme_mod('custom-logo');
-                    $logo = wp_get_attachment_image_src($custom_logo_id, full);
-                }
-                ?>
-                <a class="navbar-brand" href="#">
-                <img src="<?php echo $logo[0] ?>" alt="yd logo" width="30" height="25">
-                </a>
+            
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                <div class="d-flex justify-content-center">
-                    <!--outputting nav menu-->    
-                    <?php wp_nav_menu(
-                            array(
-                                'menu' => 'primary',
-                                'container' => '',
-                                'theme_location' => 'primary',
-                                //items_wrap to add Bootstrap classes, overriding default wp classes
-                                'items_wrap' => '<ul id="" class="navbar-nav flex-column text-sm-center text-md-left">%3$s</ul>'
-                                )
-                            );
-                        ?>
-                </div>  
-            </div> 
+                <div id="navigation" class="collapse navbar-collapse flex-column">
+                    <!--getting logo-->
+                    <?php if(function_exists('the-custom-logo')) {
+                        $custom_logo_id = get_theme_mod('custom-logo');
+                        $logo = wp_get_attachment_image_src($custom_logo_id, full);
+                    }
+                    ?>
+                    <!--outputting logo-->
+                    <a class="navbar-brand" href="#">
+                        <img class="mb-3 mx-auto logo" src="<?php echo $logo[0] ?>" alt="yd logo">
+                    </a>
+
+                    <div class="d-flex justify-content-center">
+                        <!--outputting nav menu-->    
+                        <?php wp_nav_menu(
+                                array(
+                                    'menu' => 'primary',
+                                    'container' => '',
+                                    'theme_location' => 'primary',
+                                    //items_wrap to add Bootstrap classes, overriding default wp classes
+                                    'items_wrap' => '<ul id="" class="navbar-nav flex-column text-sm-center text-md-left">%3$s</ul>'
+                                    )
+                                );
+                            ?>
+                    </div>  
+                </div> 
         </nav> 
     </header>
     <!--Top heading-->
