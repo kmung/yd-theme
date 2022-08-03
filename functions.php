@@ -1,5 +1,4 @@
-<?php
-    
+<?php 
     function yd_theme_support() {
         // dynamically add site title
         add_theme_support('title-tag');

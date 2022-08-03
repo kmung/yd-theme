@@ -1,8 +1,7 @@
 <?php get_header();?>
 
 <div class="container">
-    <!--Page Title-->
-    <h1><?php the_title();?></h1>
+    <!--Page Title loads from header.php-->
     <!--Content section-->
     <?php get_template_part('inc/section','content');?>
 

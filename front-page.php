@@ -1,10 +1,5 @@
 <?php get_header();?>
-
-<div class="main-wrapper">
-    <div class="page-title theme-bg-light text-center gradient py-5">
-        <!--Page Title-->   
-        <h1 class="heading"><?php the_title();?></h1>
-    </div>
+<!--Page Title loads from header.php-->
     <article class="content px-3 py-5 p-md-5">
         <div class="container">
             <!--Content Section-->

@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Zomi Youth Development">
     <!--Site Title-->
     <?php wp_head();?>
 </head>
 <body>
-    <!--Navigation bar-->
+    <!--Left-side Navigation bar-->
     <header class="header text-center">
         <nav class="navbar navbar-expand-lg bg-primary">
             <div class="container">
@@ -39,3 +40,10 @@
             </div> 
         </nav> 
     </header>
+    <!--Top heading-->
+    <div class="main-wrapper">
+        <header class="page-title theme-bg-light text-center gradient py-5">
+            <!--Page Title-->   
+            <h1 class="heading"><?php the_title();?></h1>
+        </header>
+        

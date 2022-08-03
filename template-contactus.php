@@ -7,10 +7,6 @@ Template Name: Contact Us
 <?php get_header();?>
 
 <div class="main-wrapper">
-    <div class="page-title theme-bg-light text-center gradient py-5">
-        <!--Page Title-->
-        <h1><?php the_title();?></h1>
-</div>
     <article class="about-section py-5">
         <div class="container">
             <div class="row">

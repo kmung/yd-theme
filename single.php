@@ -1,7 +1,6 @@
 <?php get_header();?>
 
-<!--Page Title-->   
-<h1><?php the_title();?></h1>
+<!--Page Title loads from header.php-->
 
 <article class="content">
     <!--Content Section-->
