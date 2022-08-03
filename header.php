@@ -10,7 +10,7 @@
 </head>
 <body>
     <!--Navigation bar-->
-    <header class="header">
+    <header class="header text-center">
         <nav class="navbar navbar-expand-lg bg-primary">
             <div class="container">
                 <!--Outputting logo-->
