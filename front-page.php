@@ -1,11 +1,17 @@
 <?php get_header();?>
 
-<!--Page Title-->   
-<h1><?php the_title();?></h1>
+<div class="main-wrapper">
+    <div class="page-title theme-bg-light text-center gradient py-5">
+        <!--Page Title-->   
+        <h1 class="heading"><?php the_title();?></h1>
+    </div>
+    <article class="content px-3 py-5 p-md-5">
+        <div class="container">
+            <!--Content Section-->
+            <?php get_template_part('inc/section','content');?>
+        </div>
+    </article>
+</div>
 
-<article class="content">
-    <!--Content Section-->
-    <?php get_template_part('inc/section','content');?>
-</article>
 
 <?php get_footer();?>
