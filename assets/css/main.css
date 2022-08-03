@@ -273,7 +273,7 @@ h6 {
     display: none
 }
 
-.blog-nav .nav-link {
+.blog-nav a {
     background: var(--primary);
     color: #fff;
     font-size: 1rem;
@@ -282,7 +282,7 @@ h6 {
     position: relative
 }
 
-.blog-nav .nav-link:hover {
+.blog-nav a:hover {
     background: var(--secondary);
 }
 
