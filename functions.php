@@ -35,7 +35,7 @@
         wp_enqueue_script('bootstrapjs', 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js', array(), '5.2', true);
 
         // custom js
-        wp_enqueue_script('customjs', get_template_directory_uri() . '/assets/js/main/js', array(), '1.0', true);
+        wp_enqueue_script('customjs', get_template_directory_uri() . '/assets/js/main.js', array(), '1.0', true);
     }
     add_action('wp_enqueue_scripts', 'load_js');
 

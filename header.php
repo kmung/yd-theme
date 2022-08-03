@@ -26,16 +26,16 @@
 
                 <div class="d-flex justify-content-center">
                     <!--outputting nav menu-->    
-                <?php wp_nav_menu(
-                        array(
-                            'menu' => 'primary',
-                            'container' => '',
-                            'theme_location' => 'primary',
-                            //items_wrap to add Bootstrap classes, overriding default wp classes
-                            'items_wrap' => '<ul id="" class="">%3$s</ul>'
-                            )
-                        );
-                    ?>
+                    <?php wp_nav_menu(
+                            array(
+                                'menu' => 'primary',
+                                'container' => '',
+                                'theme_location' => 'primary',
+                                //items_wrap to add Bootstrap classes, overriding default wp classes
+                                'items_wrap' => '<ul id="" class="navbar-nav flex-column text-sm-center text-md-left">%3$s</ul>'
+                                )
+                            );
+                        ?>
                 </div>  
             </div> 
         </nav> 
