@@ -10,7 +10,7 @@
     <?php wp_head();?>
 </head>
 <body>
-    <!--Left-side Navigation bar-->
+    <!--Main Navigation bar-->
     <header>
         <nav class="navbar navbar-expand-lg bg-primary py-2 sticky-top">
             <div class="container-fluid">
@@ -42,7 +42,7 @@
         </nav> 
     </header>
     <!--Start Main Wrapping-->
-    <div class="main-wrapper">
+    <section class="bg-light text-dark p-2 p-lg-0 pt-lg-5 text-center text-sm-start">
         <!--Top heading-->
         <header class="page-title theme-bg-light text-center gradient py-5">
             <!--Page Title-->   

@@ -1,5 +1,5 @@
 <!--End Main Wrapping-->
-</div>
+</section>
 <footer class="footer text-center text-white py-5 theme-bg-dark">
     <!--Copyright Section-->
     <p class="copyright">&copy;2022 Zomi Youth Development</p>
