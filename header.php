@@ -44,8 +44,8 @@
     <!--Start Main Wrapping-->
     <section class="bg-light text-dark p-2 p-lg-0 pt-lg-5 text-center text-sm-start">
         <!--Top heading-->
-        <header class="page-title theme-bg-light text-center gradient py-5">
+        <div class="d-sm-flex align-items-center justify content-between">
             <!--Page Title-->   
             <h1 class="heading"><?php the_title();?></h1>
-        </header>
+        </div>
         
