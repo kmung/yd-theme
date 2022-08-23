@@ -6,6 +6,5 @@
             <?php get_template_part('inc/section','content');?>
         </div>
     </article>
-</div>
 
 <?php get_footer();?>

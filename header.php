@@ -41,8 +41,9 @@
             </div>
         </nav> 
     </header>
-    <!--Top heading-->
+    <!--Start Main Wrapping-->
     <div class="main-wrapper">
+        <!--Top heading-->
         <header class="page-title theme-bg-light text-center gradient py-5">
             <!--Page Title-->   
             <h1 class="heading"><?php the_title();?></h1>
