@@ -12,34 +12,31 @@
 <body>
     <!--Left-side Navigation bar-->
     <header>
-        <nav class="navbar navbar-expand-lg bg-primary">
+        <nav class="navbar navbar-expand-lg bg-primary py-2 sticky-top">
             <div class="container-fluid">
+                <!--outputting logo-->
+                <a class="navbar-brand" href="#">
+                        <img class="mb-3 mx-auto logo" src="<?php echo $logo[0] ?>" alt="Zomi YD">
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div id="navigation" class="collapse navbar-collapse flex-column">
+                <div id="navigation" class="collapse navbar-collapse">
                     <!--getting logo-->
                     <?php if(function_exists('the-custom-logo')) {
                         $custom_logo_id = get_theme_mod('custom-logo');
                         $logo = wp_get_attachment_image_src($custom_logo_id, full);
                     }
                     ?>
-                    <!--outputting logo-->
-                    <a class="navbar-brand" href="#">
-                        <img class="mb-3 mx-auto logo" src="<?php echo $logo[0] ?>" alt="yd logo">
-                    </a>
-
                     <!--outputting nav menu-->    
-                    <?php wp_nav_menu(
-                            array(
-                                'menu' => 'primary',
-                                'container' => '',
-                                'theme_location' => 'primary',
-                                //items_wrap to add Bootstrap classes, overriding default wp classes
-                                'items_wrap' => '<ul id="" class="navbar-nav flex-column text-sm-center text-md-left">%3$s</ul>'
-                                )
-                            );
-                        ?>                 
+                    <?php wp_nav_menu(array(
+                            'menu' => 'primary',
+                            'container' => '',
+                            'theme_location' => 'primary',
+                            //items_wrap to add Bootstrap classes, overriding default wp classes
+                            'items_wrap' => '<ul id="" class="navbar-nav ms-auto">%3$s</ul>'
+                            ));
+                    ?>                 
                 </div> 
             </div>
         </nav> 
