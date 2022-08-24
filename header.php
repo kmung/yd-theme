@@ -34,7 +34,7 @@
                             'container' => '',
                             'theme_location' => 'primary',
                             //items_wrap to add Bootstrap classes, overriding default wp classes
-                            'items_wrap' => '<ul id="" class="navbar-nav ms-auto">%3$s</ul>'
+                            'items_wrap' => '<ul class="navbar-nav ms-auto">%3$s</ul>'
                             ));
                     ?>                 
                 </div> 
